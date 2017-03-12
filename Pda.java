@@ -1,5 +1,5 @@
 class Pda {
-  private boolean func1(int val){
+  public boolean func1(int val){
     if(val == 1){ // was assignment operator, should be == operator
       return true;
     }else{
@@ -7,7 +7,7 @@ class Pda {
     }
   }
 
-  private int max(int a, int b){ // typo in private (missing e), comma needed between a and b
+  public int max(int a, int b){ // typo in private (missing e), comma needed between a and b
     if(a > b){
       return a;
     }else{
@@ -15,7 +15,7 @@ class Pda {
     }
   }
 
-  private int looper(){
+  public int looper(){
     int i = 0;
     while(i < 10){ // should be <10, or it will count to 11 instead
       i++;
